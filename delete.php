@@ -45,6 +45,3 @@ if ($result->num_rows > 0) {
 $conn->close();
 
 include 'footer.php';
-
-
-include 'footer.php';
