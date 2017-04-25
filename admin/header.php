@@ -8,7 +8,7 @@
 
 echo '
     
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -20,10 +20,6 @@ echo '
     <!--<link rel="icon" href="../../favicon.ico">-->
 
     <title>Carlito\'s Lottery</title>
-    
-    <!-- This is code for jquery for datetime calendar -->
-    
-
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -101,9 +97,6 @@ echo '
                     <a href="/ics311final/winners.php">Winners</a>
                 </li>
                 <li>
-                    <a href="/ics311final/select.php">Select</a>
-                </li>
-                <li>
                     <a href="/ics311final/update.php">Update</a>
                 </li>
                 <li>
@@ -111,6 +104,12 @@ echo '
                 </li>
                 <li>
                     <a href="/ics311final/insert.php">Insert</a>
+                </li>
+                <li>
+                    <a href="/ics311final/admin/create-game.php">Create Game</a>
+                </li>
+                <li>
+                    <a href="/ics311final/admin/logout.php">Logout</a>
                 </li>
 
 

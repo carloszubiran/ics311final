@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ff1f2e7c-6c89-4534-8bd2-ee7aef1b85a6" name="ICS311 Server FTP" url="http://sp-cfsics.metrostate.edu/home/students/ics311sp1702/ics311sp170231">
+        <fileTransfer host="sp-cfsics.metrostate.edu" port="22" rootFolder="/home/students/ics311sp1702/ics311sp170231" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="edfe890e-ef47-4962-9ccd-324044f31dcf" name="LocalHost" url="http://localhost:63342/ics311final">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+    </option>
+  </component>
+</project>

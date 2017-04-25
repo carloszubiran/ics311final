@@ -2,24 +2,27 @@
 /**
  * Created by PhpStorm.
  * User: carloszubiran
- * Date: 4/11/17
- * Time: 8:26 PM
+ * Date: 4/24/17
+ * Time: 10:53 PM
  */
 
-include 'header.php';
+include "../header.php";
 
-echo '
+$gameID = $_GET["game"];
+$date = date("Y-m-d", strtotime($_GET["date"]));
 
-    <div class="jumbotron">
-        <h1 class="text-center">Welcome to Carlito\'s Lottery</h1>
-    </div>
+include '../db_connection.php';
 
-';
+$dateBegin = date('Y-m-d H:i:s', strtotime($date));
+$dateEnd = date('Y-m-d 23:59:59', strtotime($date));
 
-include './db_connection.php';
+echo "<h3 class='jumbotron text-center'>Here are your winners for your date and game.</h3>";
 
-$sql = "select gameName, drawingDate, drawingNumber from Game, Drawing
+
+$sql = "select gameID, gameName, drawingDate, drawingNumber from Game, Drawing
         where Game.gameID = Drawing.Game_gameID
+        and gameID = '$gameID'
+        and drawingDate BETWEEN '$dateBegin' and '$dateEnd'
         order by drawingDate desc;";
 $result = $conn->query($sql);
 
@@ -43,4 +46,6 @@ if ($result->num_rows > 0) {
 }
 $conn->close();
 
-include 'footer.php';
+include "../footer.php";
+
+
