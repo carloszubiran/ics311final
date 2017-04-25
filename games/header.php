@@ -105,6 +105,9 @@ echo '
                 <li>
                     <a href="../insert.php">Insert</a>
                 </li>
+                <li>
+                    <a href="/ics311final/admin/admin-login.php">Admin</a>
+                </li>
 
 
             </ul>
